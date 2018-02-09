@@ -1,0 +1,10 @@
+###############################################################
+## Input Select
+###############################################################
+  remote:
+    name: Bedroom Remote
+    options:
+      - PowerOff
+      - Watch Fire TV
+      - Watch TV
+    icon: mdi:remote

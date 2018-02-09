@@ -1,0 +1,15 @@
+## Scripts
+input_select_harmony:
+  alias: "Start Remote activity from input select"
+  sequence:
+      service: remote.turn_on
+      data_template:
+        entity_id: remote.master_bedroom
+        activity: >
+          {% if is_state("input_select.remote", "PowerOff") %}
+              -1
+          {% elif is_state("input_select.remote", "Watch TV") %}
+              26273250
+          {% elif is_state("input_select.remote", "Watch Fire TV") %}
+              26273271
+          {% endif %}

@@ -1,0 +1,102 @@
+automations:
+    - automation.porch_on
+    - automation.porch_off
+lights:
+    - light.bathroom_overhead
+    - light.desk
+    - light.nightstand_color
+    - light.porch_color
+mediaplayers:
+    - remote.master_bedroom
+    - remote.living_room
+    - media_player.jackson_mini
+    - media_player.bedroom_speaker
+    - media_player.kitchen
+    - media_player.office_speaker
+    - media_player.home_group
+    - media_player.fire_tv
+    - media_player.nexus_player
+Kitchen:
+    - light.dining_room_level
+    - light.kitchen_island_level
+    - light.kitchen_overhead_level
+    - switch.sink_switch
+Living Room:
+    - remote.living_room
+Nest:
+    - climate.living_room
+    - sensor.living_room_thermostat_humidity
+Weather:
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_humidity
+Master Bedroom:
+    - light.nightstand_color
+    - switch.bedroom_fan_switch
+    - light.bathroom_overhead
+    - switch.master_closet_switch
+    - input_select.remote
+Office:
+    - light.desk
+    - light.ge_link_bulb
+    - switch.switch_switch
+Other:
+    - light.porch_color
+People:
+    - device_tracker.jackson4
+Travel Time:
+    - sensor.jackson_home_to_work
+    - sensor.jackson_work_to_home
+ZWave:
+    - zwave.aeotec_zw090_zstick_gen5_us
+    - zwave.bedroom_fan
+    - zwave.dining_room
+    - zwave.kitchen_island
+    - zwave.kitchen_overhead
+    - zwave.master_closet
+    - zwave.sink
+default_view:
+  name: DEFAULT
+  icon: mdi:home
+  view: yes
+  entities:
+    - group.Master_Bedroom
+    - group.Kitchen
+    - group.Living_Room
+    - group.Office
+    - group.Other
+nest_view:
+  name: Weather
+  icon: mdi:thermometer
+  view: yes
+  entities:
+    - group.nest
+    - group.Weather
+media_view:
+  name: Media
+  icon: mdi:video
+  view: yes
+  entities:
+#    - camera.front_door
+#    - camera.front_yard
+#    - camera.back_yard
+    - group.mediaplayers
+people_view:
+  name: People
+  icon: mdi:account-multiple
+  view: yes
+  entities:
+    - group.People
+traffic_view:
+  name: Traffic
+  icon: mdi:traffic-light
+  view: yes
+  entities:
+    - group.Travel_Time
+settings_view:
+  name: settings
+  icon: mdi:settings
+  view: yes
+  entities:
+    - group.automations
+    - group.ZWave

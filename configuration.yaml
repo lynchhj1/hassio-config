@@ -1,0 +1,140 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret home_lat
+  longitude: !secret home_long 
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Chicago
+  # Customization file
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Secrets are defined in the file secrets.yaml
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  base_url: !secret http_url
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+# nest
+nest:
+  client_id: !secret nest_id
+  client_secret: !secret nest_secret
+
+# zwave
+zwave:
+  usb_path: /dev/ttyACM0
+
+# bluetooth tracker
+device_tracker:
+  - platform: bluetooth_tracker
+#  - platform: bluetooth_le_tracker
+  - platform: tile
+    username: !secret tile_user
+    password: !secret tile_pass
+
+#camera:
+#  - platform: yi
+#    name: front_door
+#    host: '192.168.86.196'
+#    password: !secret yi_pass
+
+# Sensors
+sensor: !include sensors.yaml
+
+google_assistant:
+  project_id: !secret goog_project
+  client_id: !secret goog_client
+  access_token: !secret goog_token
+  exposed_domains:
+    - switch
+    - light
+  entity_config:
+    light.bathroom_overhead:
+      expose: false
+      type: light
+    light.desk:
+      expose: false
+      type: light
+    light.dining_room_level:
+      expose: true
+      name: dining room light
+      type: light
+    light.kitchen_island_level:
+      expose: true
+      name: kitchen island light
+      type: light
+    light.kitchen_overhead_level:
+      expose: true
+      name: kitchen overhead light
+      type: light
+    switch.switch_switch:
+      expose: true
+      name: switch
+    light.nightstand_color:
+      expose: false
+    light.porch_color:
+      expose: false
+    light.bedroom:
+      expose: false
+    light.bathroom:
+      expose: false
+    light.living_room:
+      expose: false
+    light.office:
+      expose: false
+    light.porch:
+      expose: false
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+input_select: !include input_select.yaml

@@ -1,0 +1,34 @@
+## Automations
+- alias: porch_on
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "-00:10:00"
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.porch_color
+- alias: porch_off
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "+03:30:00"
+  action:
+    service: homeassistant.turn_off
+    entity_id: light.porch_color
+- alias: Media - Remote external update Media Center
+  trigger:
+    - platform: state
+      entity_id: remote.master_bedroom
+  action:
+    - service: input_select.select_option
+      data_template:
+        entity_id: input_select.remote
+        option: >
+          {{ states.remote.master_bedroom.attributes.current_activity }}
+- alias: Media - Remote start activity from input select media center
+  trigger:
+    - platform: state
+      entity_id: input_select.remote
+  action:
+    - service: script.turn_on
+      entity_id: script.input_select_harmony
