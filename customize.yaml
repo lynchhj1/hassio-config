@@ -1,1 +1,11 @@
 ## Customize
+  switch.switch_switch:
+    friendly_name: Switch
+  light.dining_room_level:
+    friendly_name: Dining Room Light
+  light.kitchen_island_level:
+    friendly_name: Kitchen Island Light
+  light.kitchen_overhead_level:
+    friendly_name: Kitchen Overhead Light
+  switch.bedroom_fan_switch:
+    friendly_name: Bedroom Fan
