@@ -1,0 +1,90 @@
+climate.living_room:
+  platform: nest
+  unique_id: vl7T0rbSEZU3qrE7F0BP6uXwMuZGxPPP
+switch.switch_switch:
+  platform: zwave
+  unique_id: 3-72057594093060096
+sensor.switch_power:
+  platform: zwave
+  unique_id: 3-72057594093256770
+sensor.switch_energy:
+  platform: zwave
+  unique_id: 3-72057594093273090
+sensor.switch_previous_reading:
+  platform: zwave
+  unique_id: 3-72057594093273106
+sensor.switch_interval:
+  platform: zwave
+  unique_id: 3-72057594093273123
+sensor.switch_power_2:
+  platform: zwave
+  unique_id: 3-72057594093273218
+sensor.switch_previous_reading_2:
+  platform: zwave
+  unique_id: 3-72057594093273234
+sensor.switch_interval_2:
+  platform: zwave
+  unique_id: 3-72057594093273251
+sensor.switch_exporting:
+  platform: zwave
+  unique_id: 3-72057594093273600
+switch.bedroom_fan_switch:
+  platform: zwave
+  unique_id: 4-72057594109837312
+sensor.bedroom_fan_power:
+  platform: zwave
+  unique_id: 4-72057594110033986
+sensor.bedroom_fan_energy:
+  platform: zwave
+  unique_id: 4-72057594110050306
+sensor.bedroom_fan_previous_reading:
+  platform: zwave
+  unique_id: 4-72057594110050322
+sensor.bedroom_fan_interval:
+  platform: zwave
+  unique_id: 4-72057594110050339
+sensor.bedroom_fan_power_2:
+  platform: zwave
+  unique_id: 4-72057594110050434
+sensor.bedroom_fan_previous_reading_2:
+  platform: zwave
+  unique_id: 4-72057594110050450
+sensor.bedroom_fan_interval_2:
+  platform: zwave
+  unique_id: 4-72057594110050467
+sensor.bedroom_fan_exporting:
+  platform: zwave
+  unique_id: 4-72057594110050816
+light.dining_room_level:
+  platform: zwave
+  unique_id: 5-72057594126630913
+switch.master_closet_switch:
+  platform: zwave
+  unique_id: 6-72057594143391744
+switch.sink_switch:
+  platform: zwave
+  unique_id: 7-72057594160168960
+light.kitchen_island_level:
+  platform: zwave
+  unique_id: 8-72057594176962561
+light.kitchen_overhead_level:
+  platform: zwave
+  unique_id: 9-72057594193739777
+light.porch_color:
+  platform: hue
+  unique_id: 00:17:88:01:02:4e:77:a7-0b
+light.nightstand_color:
+  platform: hue
+  unique_id: 00:17:88:01:02:4c:89:33-0b
+light.desk:
+  platform: hue
+  unique_id: 00:17:88:01:00:d5:5e:24-0b
+light.bathroom_overhead:
+  platform: hue
+  unique_id: 00:17:88:01:00:e5:17:89-0b
+media_player.fire_tv:
+  platform: plex
+  unique_id: bedc8a2901aa7e1e-com-plexapp-android
+media_player.lynchmob:
+  platform: plex
+  unique_id: nigce2q82mgy08dsh4w5jp0r
