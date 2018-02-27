@@ -88,3 +88,36 @@ media_player.fire_tv:
 media_player.lynchmob:
   platform: plex
   unique_id: nigce2q82mgy08dsh4w5jp0r
+media_player.nexus_player_2:
+  platform: plex
+  unique_id: caa962f56bf7f86f-com-plexapp-android
+media_player.plex_web_chrome:
+  platform: plex
+  unique_id: trso0pbymviwmx5eri55zmbt
+media_player.plex_web_chrome_2:
+  platform: plex
+  unique_id: f2cafduycmypji6r9uymcnv8
+media_player.plex_web_chrome_3:
+  platform: plex
+  unique_id: 3pq6pps49zbxmuq0wu2qps4c
+media_player.bedroom_speaker:
+  platform: cast
+  unique_id: a677b592-787b-c8ac-4c5e-0a2bb0e293ff
+media_player.office_speaker:
+  platform: cast
+  unique_id: 556ad6d7-776c-d666-2a51-426a054162b1
+media_player.kitchen:
+  platform: cast
+  unique_id: 221785e9-c0d7-3a84-755d-01e4e61a7ac6
+media_player.home_group:
+  platform: cast
+  unique_id: 8d15671f-b61e-4e62-ac74-a9cb28d7529d
+media_player.den_tv:
+  platform: cast
+  unique_id: 84c21561-ee7b-a52f-2ac4-471104f5c070
+media_player.jackson_mini:
+  platform: cast
+  unique_id: 6be273a0-7237-3d4f-479e-ba3c914f8f31
+media_player.nexus_player:
+  platform: cast
+  unique_id: dad331dc-21f7-02cc-5c98-becf2600f501
