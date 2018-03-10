@@ -93,22 +93,17 @@ google_assistant:
   entity_config:
     light.bathroom_overhead:
       expose: false
-      type: light
     light.desk:
       expose: false
-      type: light
     light.dining_room_level:
       expose: true
       name: dining room light
-      type: light
     light.kitchen_island_level:
       expose: true
       name: kitchen island light
-      type: light
     light.kitchen_overhead_level:
       expose: true
       name: kitchen overhead light
-      type: light
     switch.switch_switch:
       expose: true
       name: switch

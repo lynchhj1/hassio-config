@@ -121,3 +121,6 @@ media_player.jackson_mini:
 media_player.nexus_player:
   platform: cast
   unique_id: dad331dc-21f7-02cc-5c98-becf2600f501
+media_player.plex_web_chrome_4:
+  platform: plex
+  unique_id: rh97gqa0h4csvzy76lfbelw8
