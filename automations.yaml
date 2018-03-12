@@ -11,7 +11,7 @@
   trigger:
     platform: sun
     event: sunset
-    offset: "+03:30:00"
+    offset: "+01:10:00"
   action:
     service: homeassistant.turn_off
     entity_id: light.porch_color
