@@ -1,126 +1,172 @@
 climate.living_room:
+  name:
   platform: nest
   unique_id: vl7T0rbSEZU3qrE7F0BP6uXwMuZGxPPP
 switch.switch_switch:
+  name:
   platform: zwave
   unique_id: 3-72057594093060096
 sensor.switch_power:
+  name:
   platform: zwave
   unique_id: 3-72057594093256770
 sensor.switch_energy:
+  name:
   platform: zwave
   unique_id: 3-72057594093273090
 sensor.switch_previous_reading:
+  name:
   platform: zwave
   unique_id: 3-72057594093273106
 sensor.switch_interval:
+  name:
   platform: zwave
   unique_id: 3-72057594093273123
 sensor.switch_power_2:
+  name:
   platform: zwave
   unique_id: 3-72057594093273218
 sensor.switch_previous_reading_2:
+  name:
   platform: zwave
   unique_id: 3-72057594093273234
 sensor.switch_interval_2:
+  name:
   platform: zwave
   unique_id: 3-72057594093273251
 sensor.switch_exporting:
+  name:
   platform: zwave
   unique_id: 3-72057594093273600
 switch.bedroom_fan_switch:
+  name:
   platform: zwave
   unique_id: 4-72057594109837312
 sensor.bedroom_fan_power:
+  name:
   platform: zwave
   unique_id: 4-72057594110033986
 sensor.bedroom_fan_energy:
+  name:
   platform: zwave
   unique_id: 4-72057594110050306
 sensor.bedroom_fan_previous_reading:
+  name:
   platform: zwave
   unique_id: 4-72057594110050322
 sensor.bedroom_fan_interval:
+  name:
   platform: zwave
   unique_id: 4-72057594110050339
 sensor.bedroom_fan_power_2:
+  name:
   platform: zwave
   unique_id: 4-72057594110050434
 sensor.bedroom_fan_previous_reading_2:
+  name:
   platform: zwave
   unique_id: 4-72057594110050450
 sensor.bedroom_fan_interval_2:
+  name:
   platform: zwave
   unique_id: 4-72057594110050467
 sensor.bedroom_fan_exporting:
+  name:
   platform: zwave
   unique_id: 4-72057594110050816
 light.dining_room_level:
+  name:
   platform: zwave
   unique_id: 5-72057594126630913
 switch.master_closet_switch:
+  name:
   platform: zwave
   unique_id: 6-72057594143391744
 switch.sink_switch:
+  name:
   platform: zwave
   unique_id: 7-72057594160168960
 light.kitchen_island_level:
+  name:
   platform: zwave
   unique_id: 8-72057594176962561
 light.kitchen_overhead_level:
+  name:
   platform: zwave
   unique_id: 9-72057594193739777
 light.porch_color:
+  name:
   platform: hue
   unique_id: 00:17:88:01:02:4e:77:a7-0b
 light.nightstand_color:
+  name:
   platform: hue
   unique_id: 00:17:88:01:02:4c:89:33-0b
 light.desk:
+  name:
   platform: hue
   unique_id: 00:17:88:01:00:d5:5e:24-0b
 light.bathroom_overhead:
+  name:
   platform: hue
   unique_id: 00:17:88:01:00:e5:17:89-0b
 media_player.fire_tv:
+  name:
   platform: plex
   unique_id: bedc8a2901aa7e1e-com-plexapp-android
 media_player.lynchmob:
+  name:
   platform: plex
   unique_id: nigce2q82mgy08dsh4w5jp0r
 media_player.nexus_player_2:
+  name:
   platform: plex
   unique_id: caa962f56bf7f86f-com-plexapp-android
 media_player.plex_web_chrome:
+  name:
   platform: plex
   unique_id: trso0pbymviwmx5eri55zmbt
 media_player.plex_web_chrome_2:
+  name:
   platform: plex
   unique_id: f2cafduycmypji6r9uymcnv8
 media_player.plex_web_chrome_3:
+  name:
   platform: plex
   unique_id: 3pq6pps49zbxmuq0wu2qps4c
 media_player.bedroom_speaker:
+  name:
   platform: cast
   unique_id: a677b592-787b-c8ac-4c5e-0a2bb0e293ff
 media_player.office_speaker:
+  name:
   platform: cast
   unique_id: 556ad6d7-776c-d666-2a51-426a054162b1
 media_player.kitchen:
+  name:
   platform: cast
   unique_id: 221785e9-c0d7-3a84-755d-01e4e61a7ac6
 media_player.home_group:
+  name:
   platform: cast
   unique_id: 8d15671f-b61e-4e62-ac74-a9cb28d7529d
 media_player.den_tv:
+  name:
   platform: cast
   unique_id: 84c21561-ee7b-a52f-2ac4-471104f5c070
 media_player.jackson_mini:
+  name:
   platform: cast
   unique_id: 6be273a0-7237-3d4f-479e-ba3c914f8f31
 media_player.nexus_player:
+  name:
   platform: cast
   unique_id: dad331dc-21f7-02cc-5c98-becf2600f501
 media_player.plex_web_chrome_4:
+  name:
   platform: plex
   unique_id: rh97gqa0h4csvzy76lfbelw8
+media_player.plex_web_chrome_5:
+  name:
+  platform: plex
+  unique_id: gk3v923ypca97u5ktxafrsk6
